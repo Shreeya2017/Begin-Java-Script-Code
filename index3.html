@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        </head>
+        
+        <body>
+        <script src="script.js"></script>
+            <script>
+            
+                //document.write("<h1>date</h1>"+date);
+                //hour = now.getHours();
+                //min now = new Date();= now.getMinutes();
+                function sec()
+                {   now = new Date();
+                    secs= now.getSeconds();
+                    milli= now.getMilliseconds();
+                document.write("live seconds:"+secs+" millisec:"+milli);}
+                sec();
+                setTimeout(function(){  
+                window.location.reload(1);
+                }, 2000);
+            </script>
+        </body>
+</html>
